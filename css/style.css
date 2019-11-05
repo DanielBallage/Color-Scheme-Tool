@@ -11,7 +11,7 @@ body {
     padding: 0.5em;
     top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -19,9 +19,21 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-#nav {
+#title {
+    justify-content: center;
+    align-self: center;
+}
+
+.collapsible {
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#nav {
+    display: none;
 }
 
 #content {
@@ -40,6 +52,11 @@ input, #myButton, #reset {
     border-radius: 7px;
     box-shadow: 3px 3px 5px rgb(20, 20, 20);
     transition: transform 0.3s;
+}
+
+input {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 #myTextInput6 {
@@ -61,7 +78,7 @@ input, #myButton, #reset {
     transform: scale(1.1);
 }
 
-#myButton:focus, #reset:focus {
+input, #myButton:focus, #reset:focus {
     outline: none;
 }
 
@@ -83,10 +100,15 @@ input:focus {
     }
 
     #nav {
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-self: center;
-        flex-grow: 0.5;
+        flex-grow: 0.5; 
+    }
+
+    .collapsible {
+        display: none;  
     }
 
 }
