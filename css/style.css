@@ -1,0 +1,92 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#header {
+    background-color: gray;
+    color: white;
+    padding: 0.5em;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(20, 20, 20);
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+input, #myButton, #reset {
+    width: 15em;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(20, 20, 20);
+    transition: transform 0.3s;
+}
+
+#myTextInput6 {
+    margin-bottom: 2em;
+}
+
+#myButton, #reset {
+    background-color: gray;
+    color: white;
+    margin-bottom: 2em;
+    border-style: none;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#myButton:hover, #reset:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#myButton:focus, #reset:focus {
+    outline: none;
+}
+
+#myButton:active, #reset:active {
+    border-style: solid;
+    border-color: black;
+}
+input:focus {
+    transform: scale(1.1);
+}
+
+@media (min-width: 650px) {
+
+    #header {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        margin: 0 auto;
+    }
+
+    #nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        flex-grow: 0.5;
+    }
+
+}
