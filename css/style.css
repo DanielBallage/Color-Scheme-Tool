@@ -1,3 +1,5 @@
+/*------------------------Website layout, fonts and base color shceme-------------------------------------*/
+
 body {
     background-color: white;
     color: black;
@@ -43,6 +45,7 @@ body {
     align-self: center;
     margin: 0 auto;
     width: 80%;
+    padding-top: 1em;
 }
 
 input, #myButton, #reset {
@@ -59,7 +62,9 @@ input {
     padding-bottom: 0.2em;
 }
 
-#myTextInput6 {
+/*----------------------------Button and input interaction colors and animation-----------------------------*/
+
+#myTextInput8 {
     margin-bottom: 2em;
 }
 
@@ -90,6 +95,14 @@ input:focus {
     transform: scale(1.1);
 }
 
+#footer {
+    background-color: gray;
+    color: white;
+    opacity: 0.95;
+    padding: 1em;
+}
+
+/*-----------------------------------------media queries--------------------------------------------------*/
 @media (min-width: 650px) {
 
     #header {
@@ -97,6 +110,7 @@ input:focus {
         justify-content: space-around;
         flex-grow: 1;
         margin: 0 auto;
+        position: sticky;
     }
 
     #nav {
@@ -109,6 +123,11 @@ input:focus {
 
     .collapsible {
         display: none;  
+    }
+
+    #footer {
+        position: sticky;
+        bottom: 0;
     }
 
 }
