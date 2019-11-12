@@ -19,6 +19,7 @@ body {
     border-bottom-right-radius: 10px;
     box-shadow: 3px 3px 5px rgb(20, 20, 20);
     font-family: 'Raleway', sans-serif;
+    z-index: 99;
 }
 
 #title {
